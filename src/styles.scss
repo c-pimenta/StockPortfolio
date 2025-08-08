@@ -1,0 +1,321 @@
+body {
+ background: linear-gradient(135deg, #000000 0%, #0d0d0d 25%, #1a1a1a 50%, #262626 75%, #0d0d0d 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #e0e0e0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.custom-navbar {
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  border-bottom: 1px solid #3a3a3a;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  padding: 0.8rem 1rem;
+  border-radius: 0 0 15px 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+.custom-navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.custom-navbar .navbar-brand {
+  color: #6dc5ee;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #89d4ff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.custom-navbar .nav-link {
+  position: relative;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  color: #cccccc;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #6dc5ee !important;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .custom-navbar .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@keyframes blackPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card, .form-control, .table, .alert {
+  background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+  border: 1px solid #3a3a3a;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.card:hover, .form-control:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+}
+
+h2, h3, h4, h5 {
+  color: #ffffff;
+}
+
+.btn-success, .btn-primary, .btn-warning {
+  background: linear-gradient(145deg, #6dc5ee, #308abf);
+  color: #111;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-warning:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+  background: linear-gradient(145deg, #7dd6ff, #3797cc);
+}
+
+a {
+  color: #6dc5ee;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #89d4ff;
+  border-bottom: 1px solid #89d4ff;
+}
+
+.form-label {
+  color: #91cfff;
+}
+
+.table th, .table td {
+  color: #ddd;
+  background-color: #1b1b1b !important;
+  border-color: #333;
+}
+
+.table thead th {
+  background-color: #2a2a2a;
+  color: #6dc5ee;
+}
+
+input.form-control,
+textarea.form-control,
+select.form-control {
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  caret-color: #6dc5ee;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+  color: #888;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+select.form-control:focus {
+  background-color: #1f1f1f;
+  border-color: #6dc5ee;
+  color: #e0e0e0 ;
+  box-shadow: none;
+}
+.alert {
+  background-color: #2b2a00;
+  color: #ffc107;
+  border: 1px solid #ffcc00;
+}
+
+.chart-container {
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+// Footer Styles
+.app-footer {
+   background: linear-gradient(135deg, #000000 0%, #0d0d0d 25%, #1a1a1a 50%, #262626 75%, #0d0d0d 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #ffffff;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #667eea, transparent);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+.market-info {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.market-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.market-label {
+  color: #b8c5d1;
+  font-weight: 500;
+}
+
+.market-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.market-status.open {
+  background: rgba(39, 174, 96, 0.2);
+  color: #27ae60;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+.market-time {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.market-disclaimer {
+  color: #f39c12;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-section {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 13px;
+  color: #aab8c2;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.legal-text {
+  font-size: 12px;
+  color: #8899a6;
+  margin-top: 5px;
+}
+
+.footer-badges {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.security-badge i {
+  color: #6dc5ee;
+}
+
+.security-badge:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
+  border-color: #6dc5ee;
+} 
