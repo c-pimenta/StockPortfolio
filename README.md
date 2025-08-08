@@ -2,7 +2,7 @@
 
 A modern, real-time stock portfolio management application built with Angular 19, featuring live market data integration and comprehensive financial analysis tools.
 
-## 🚀 Technologies Used
+## Technologies Used
 
 * **Framework**: Angular 19.0.2 (Standalone Components)
 * **Financial Data API**: Twelve Data API for real-time market information
@@ -32,32 +32,32 @@ netlify/
 
 The application structure represents a well-organized Angular project where the `src/app` folder contains the main application elements. Within it, the `components` folder groups components accessed through the `<router-outlet>` in `app.component.ts` (the main project file), such as login, portfolio, and wallet, each with their respective `.ts`, `.scss`, and `.spec.ts` files for logic, styles, and tests. The `guards` folder includes files like `auth.guards.ts` for route authentication protection. The `services` folder contains services like `stock.service.ts` that handle business logic and API communication through Netlify Functions, ensuring API keys remain secure.
 
-## ✨ Key Features
-# 📊 Portfolio Management
+##  Key Features
+### Portfolio Management
 
 Add and manage stock positions with automatic ticker validation
 Real-time price updates with manual and automatic refresh options
 Portfolio operations: add, remove, clear, and export to CSV
 
-# 📈 Financial Analysis
+###  Financial Analysis
 
 Real-time profit/loss calculations for individual stocks and total portfolio
 Color-coded financial dashboard showing key metrics
 Historical price tracking and percentage change calculations
 
-# 📊 Data Visualization
+###  Data Visualization
 
 Interactive 30-day price history charts for individual stocks
 Portfolio comparison charts with multiple stock overlays
 Responsive design with zoom and navigation controls
 
-# 💾 Data Management
+###  Data Management
 
 Local storage persistence for portfolio data
 CSV export functionality for external analysis
 Automatic data recovery across browser sessions
 
-## 🔧 Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 
@@ -150,7 +150,7 @@ Automatic data recovery across browser sessions
 3. Test the function endpoint directly in your browser
 4. Check browser console and network tabs for error messages
 
-## 🌐 Production Deployment
+##  Production Deployment
 
 ### Netlify Deployment
 
@@ -180,7 +180,7 @@ The application is optimized for production with:
 - Automatic serverless function deployment
 - Secure environment variable handling
 
-## 🔐 Authentication and Security
+##  Authentication and Security
 
 The application includes route protection through Angular Guards, ensuring secure access to portfolio management features. Authentication state is managed reactively and persisted locally for seamless user experience.
 
@@ -190,7 +190,7 @@ The application includes route protection through Angular Guards, ensuring secur
 - Environment variable protection
 - CORS-enabled secure requests
 
-## 📱 Responsive Design
+##  Responsive Design
 
 Built with Bootstrap, the application provides optimal viewing experience across:
 - Desktop computers
@@ -198,7 +198,7 @@ Built with Bootstrap, the application provides optimal viewing experience across
 - Mobile devices
 - Various screen sizes and orientations
 
-## 🧪 Testing
+## Testing
 
 The project includes comprehensive testing setup:
 - Unit tests for components and services
